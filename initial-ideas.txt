@@ -18,6 +18,9 @@ Example:
 term - definition
 eg. jksljadf
 term - definition 
+listname 
+    - list item
+    - list item
 
 functionalities: 
 get context - shows some of the notes around the given definition, and allows move up and move down
@@ -29,4 +32,3 @@ show number of definitions left
 
 
 
-lists - list of things that sth does 
