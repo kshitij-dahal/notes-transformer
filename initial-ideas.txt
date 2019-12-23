@@ -1,0 +1,32 @@
+Summary: App that takes in a pdf file with notes and based on its formatting, generates diff ways to study the notes more effectively
+
+Modes:
+Dictionary 
+    modes:
+        shuffled 
+        in order
+        look through all the terms as a list
+        allow user to enter terms to guess (give answer correct if some words match)
+
+
+overall functionalities:
+- allow starring certain terms
+
+dictionary <- similar to quizlet, to learn definitions
+Example:
+1.3 Topic <- bolded, number in front is optional
+term - definition
+eg. jksljadf
+term - definition 
+
+functionalities: 
+get context - shows some of the notes around the given definition, and allows move up and move down
+get topic - shows the topic under which the definition is eg. chapter name
+get other uses - find other times that this definition has been used
+get example - shows example of this concept being implemented
+show number of definitions left
+
+
+
+
+lists - list of things that sth does 
