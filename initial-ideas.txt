@@ -30,5 +30,37 @@ get example - shows example of this concept being implemented
 show number of definitions left
 
 
+Classes:
+Term
+Explanation <- contains examples
+Definition extends Explanation
+TermList extends Explanation
+Dictionary <- contains all terms and definitions, can get ordered or shuffled list
+TermExplanationCollection implements Collection <- contains collection of terms and collections, that allows items to be added to it and creates iterator
+TermExplanationIterator implements Iterator <- hasNext(), next()
+TermExplanation <- contains pair of term and explanation
+ExampleCollection implements Collection 
+ExampleIterator implements Iterator
+
+
+
+
+Design patterns
+- use iterator design pattern for the term explanation 
+
+
+Definition extends Explanation 
+- includes definition of term
+TermList extends Explanation
+- includes list of 
+Term 
+- definition: includes definition of term or list of items if term is some topic
+- id: returns something to identify the term in the original pdf(eg. Page number, line number), or maybe the unique term id
+- 
+PDFExtractor 
+- responsible for extracting pdf into plain text
+- returns a
+
+
 
 
