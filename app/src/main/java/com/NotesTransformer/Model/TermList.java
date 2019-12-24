@@ -6,8 +6,8 @@ public class TermList extends Explanation {
   private int index;
 
 
-  public TermList(int numOfExamples, int listLength) {
-    super(numOfExamples);
+  public TermList(ExampleCollection examples, int listLength) {
+    super(examples);
     list = new String[listLength];
     index = 0;
   }

@@ -7,7 +7,6 @@ public class ExampleCollection implements Collection {
 
   private ArrayList<Example> examples;
   private static final int MAX_NUM_OF_EXAMPLES = 3;
-  private int index;
 
   public ExampleCollection() {
     examples = new ArrayList<>();
@@ -15,7 +14,7 @@ public class ExampleCollection implements Collection {
 
   public void addItem(Object value) {
     if (examples.size() < MAX_NUM_OF_EXAMPLES && value != null) {
-      Example example = new Example((String) value);
+      Example example = (Example) value;
       examples.add(example);
     }
   }
@@ -28,7 +27,7 @@ public class ExampleCollection implements Collection {
 
   public void updateItem(int updateIndex, Object newValue) {
     if (updateIndex < examples.size() && updateIndex >= 0 && newValue != null) {
-      Example example = new Example((String) newValue);
+      Example example = (Example) newValue;
       examples.set(updateIndex, example);
     }
   }

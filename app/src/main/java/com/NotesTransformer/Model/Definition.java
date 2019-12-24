@@ -13,7 +13,7 @@ public class Definition extends Explanation {
     return def;
   }
 
-  public void setDefinition() {
+  public void setDefinition(String def) {
     this.def = def;
   }
 
