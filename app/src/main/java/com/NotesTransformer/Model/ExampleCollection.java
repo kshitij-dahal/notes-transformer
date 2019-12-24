@@ -2,7 +2,6 @@ package com.NotesTransformer.Model;
 
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class ExampleCollection implements Collection {
 

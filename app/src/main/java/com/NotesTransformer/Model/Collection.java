@@ -1,15 +1,14 @@
 package com.NotesTransformer.Model;
 
-import java.util.Iterator;
 
 public interface Collection {
 
-  public void addItem(Object value);
+   void addItem(Object value);
 
-  public void removeItem(int removalIndex);
+   void removeItem(int removalIndex);
 
-  public void updateItem(int updateIndex, Object newValue);
+   void updateItem(int updateIndex, Object newValue);
 
-  public Iterator createIterator();
+   Iterator createIterator();
 
 }
