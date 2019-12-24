@@ -4,8 +4,8 @@ public class Definition extends Explanation {
 
   private String def;
 
-  public Definition(int numOfExamples, String def) {
-    super(numOfExamples);
+  public Definition(String def, ExampleCollection examples) {
+    super(examples);
     this.def = def;
   }
 

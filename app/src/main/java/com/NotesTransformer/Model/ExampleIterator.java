@@ -7,13 +7,13 @@ public class ExampleIterator implements Iterator {
   private ArrayList<Example> examples;
   private int pos;
 
-  public ExampleIterator(ArrayList<Example> examples){
+  public ExampleIterator(ArrayList<Example> examples) {
     this.examples = examples;
     pos = 0;
   }
 
   public boolean hasNext() {
-    if(pos < examples.size()){
+    if (pos < examples.size()) {
       return true;
     }
     return false;
