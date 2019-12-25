@@ -3,11 +3,6 @@ package com.NotesTransformer.View;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.example.notestransformer.R;
-import com.tom_roush.pdfbox.pdmodel.PDDocument;
-import com.tom_roush.pdfbox.text.PDFTextStripper;
-import com.tom_roush.pdfbox.util.PDFBoxResourceLoader;
-import java.io.File;
-import java.io.FileWriter;
 
 
 
