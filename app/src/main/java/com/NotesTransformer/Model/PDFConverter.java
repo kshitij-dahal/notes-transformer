@@ -11,8 +11,9 @@ import java.io.IOException;
 public class PDFConverter {
 
   private static Dictionary dictionary = null;
+  private static String pdfFilePath = null;
 
-  public static String getPlainText(Context context, String pdfFilePath){
+  public static String getPlainText(Context context){
     PDFBoxResourceLoader.init(context);
     String text;
     try {
@@ -32,6 +33,10 @@ public class PDFConverter {
       return null;
     }
     return text;
+  }
+
+  public static void setPdfFilePath(String filePath){
+    pdfFilePath = filePath;
   }
 
 

@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.NotesTransformer.Controller.MainSelectPDFController;
+import com.NotesTransformer.Model.PDFConverter;
 import com.example.notestransformer.R;
 
 
@@ -40,8 +41,11 @@ public class MainSelectPDFView extends AppCompatActivity {
       case 1:
         if (resultCode == -1) {
           Uri uri = data.getData();
-          String src = uri.getPath();
-          Toast.makeText(this,src,Toast.LENGTH_LONG).show();
+          String pdfSrc = uri.getPath();
+          PDFConverter.setPdfFilePath(getFilesDir() + "/" + pdfSrc);
+          Toast.makeText(this,pdfSrc,Toast.LENGTH_LONG).show();
+          Intent intent = new Intent(this,DictionaryOptionsView.class);
+          startActivity(intent);
         }
 
         break;

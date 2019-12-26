@@ -23,7 +23,7 @@ public class MainSelectPDFController implements View.OnClickListener {
     if (v.getId() == R.id.selectPDFBtn) {
         // show file picker
       Intent chooseFile = new Intent(Intent.ACTION_GET_CONTENT);
-      chooseFile.setType("*/*");
+      chooseFile.setType("application/pdf");
       chooseFile = Intent.createChooser(chooseFile, "Choose a file");
       view.startActivityForResult(chooseFile, PICKFILE_RESULT_CODE);
 

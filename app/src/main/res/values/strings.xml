@@ -2,4 +2,12 @@
   <string name="app_name">Notes Transformer</string>
   <string name="action_settings">Settings</string>
   <string name="selectPdf">Select Pdf</string>
+  <string name="title_activity_dictionary_view">DictionaryView</string>
+  <string name="title_home">Home</string>
+  <string name="title_dashboard">Dashboard</string>
+  <string name="title_notifications">Notifications</string>
+  <string name="title_list">List</string>
+  <string name="title_ordered">Ordered</string>
+  <string name="title_shuffled">Shuffled</string>
+  <string name="title_guess">Guess</string>
 </resources>
