@@ -22,7 +22,8 @@ public class PDFConverter {
       PDDocument document = PDDocument.load(file);
 
       //Instantiate PDFTextStripper class
-      PDFTextStripper pdfStripper = new PDFTextStripper();
+      PDFTextStripper pdfStripper = new PDFStyledTextStripper();
+      pdfStripper.setSortByPosition(true);
 
       //Retrieving text from PDF document
       text = pdfStripper.getText(document);
@@ -30,6 +31,8 @@ public class PDFConverter {
       //Closing the document
       document.close();
     }catch (IOException e){
+    e.printStackTrace();
+    System.out.println("This is the path" + pdfFilePath);
       return null;
     }
     return text;

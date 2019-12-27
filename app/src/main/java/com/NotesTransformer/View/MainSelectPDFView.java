@@ -2,6 +2,7 @@ package com.NotesTransformer.View;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Environment;
 import android.widget.Button;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -42,10 +43,15 @@ public class MainSelectPDFView extends AppCompatActivity {
         if (resultCode == -1) {
           Uri uri = data.getData();
           String pdfSrc = uri.getPath();
-          PDFConverter.setPdfFilePath(getFilesDir() + "/" + pdfSrc);
-          Toast.makeText(this,pdfSrc,Toast.LENGTH_LONG).show();
-          Intent intent = new Intent(this,DictionaryOptionsView.class);
-          startActivity(intent);
+
+          PDFConverter.setPdfFilePath("mnt/sdcard/Download/test2.pdf");
+
+       //   Toast.makeText(this,pdfSrc,Toast.LENGTH_LONG).show();
+
+          System.out.println(PDFConverter.getPlainText(this));
+
+      //    Intent intent = new Intent(this,DictionaryOptionsView.class);
+      //    startActivity(intent);
         }
 
         break;
